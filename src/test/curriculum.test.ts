@@ -3,6 +3,7 @@ import { courses } from '../data/courses/javascript';
 import { runJavascript } from '../engine/JavascriptRunner';
 
 describe('Curriculum Verification', () => {
+
     courses.forEach(course => {
         describe(`Course: ${course.title}`, () => {
             course.lessons.forEach(lesson => {
